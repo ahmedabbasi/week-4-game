@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<div>
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Crystal Collector!</h1>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="instructions">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                    total score.</p>
+                <p>You win the gameby matching your total score to a random number, you lose the game if your score goes above
+                    the random number.</p>
+                <p>The value of each crystal is hidden until you click.</p>
+                <p>Each time when the game starts , the game will change the value of each crystal</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="col-md-4 col-sm-10">
+                <div id="random-number"></div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-10" id="win-box">
+            <p>Wins: </p>
+            <div id="wins"> </div>
+        </div>
+        <div class="col-md-2 col-sm-10" id="loss-box">
+            <p>Losses: </p>
+            <div id="losses"> </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="shapes"></div>
+        <div class="col-md-2 col-sm-3">
+            <img src="assets/images/heart_ace.png" alt="" class="img heart-shape" style="position:relative; float:left;height:120px; border-style:solid">
+        </div>
+        <div class="col-md-2 col-sm-6">
+            <img src="assets/images/clubs-ace.png" alt="" class="img clubs-shape" style="position:relative; float:left;height:120px; border-style:solid">
+        </div>
+        <div class="col-md-2 col-sm-9">
+            <img src="assets/images/diamond-ace.png" alt="" class="img diamond-shape" style="position:relative; float:left;height:120px; border-style:solid">
+        </div>
+        <div class="col-md-2 col-sm-12">
+            <img src="assets/images/spade-ace.png" alt="" class="img spade-shape" style="position:relative; float:left;height:120px; border-style:solid">
+        </div>
+        <div class="conatiner">
+            <div class="col-md-4 col-sm-6" id="score-box">
+                <p>Score:</p>
+                <div id="user-score">
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

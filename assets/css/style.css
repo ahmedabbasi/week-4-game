@@ -1,0 +1,55 @@
+body{
+   
+}
+
+.jumbotron{
+    background-color:lightseagreen;
+    opacity: 0.5;
+    text-align: center;
+    height:150px;
+}
+
+.instructions{
+    background-color: lightseagreen;
+}
+#score-box{
+    width:200px;
+    height:100px;
+    background-color: lightseagreen;
+    margin-left:100px;
+    border-style: solid;
+    color:brown;
+    border-width: 10px;
+    text-align: center;
+
+}
+
+#random-number{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+    background-color: lightseagreen;
+    width:75px;
+    height:75px;
+    border-style: solid;
+    border-width: 10px;
+    text-align: center;
+    margin-left:500px;
+}
+#win-box{
+    background-color:lightseagreen;
+    font-size: 20px;
+    margin-left:200px;
+    margin-bottom:60px;
+    border-style:solid;
+    color:brown;
+    
+}
+#loss-box{
+    background-color:lightseagreen;
+    font-size: 20px;
+    margin-left:400px;
+    margin-bottom:60px;
+    border-style:solid;
+    color:brown;
+}
