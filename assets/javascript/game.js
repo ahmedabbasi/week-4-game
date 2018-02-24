@@ -8,11 +8,15 @@ $(document).ready(function () {
     var userScore = 0;
     $("#wins").text(wins);
     $("#losses").text(losses);
+
+        var randomNumber=(Math.floor(Math.random() * 120) + 20);
+        $("#random-number").text(randomNumber);
     
-        //Create a random variable
-    var randomNumber = (Math.floor(Math.random() * 120) + 20);
-        //Append a number to the div in HTMl
-     $("#random-number").text(randomNumber);
+        //function calRandom(){
+        //var randomNumber = (Math.floor(Math.random() * 120) + 20);
+        //$("#random-number").text(randomNumber);
+        //};
+        
 
     // Assign the values to shapes
     if (userScore < randomNumber) {
@@ -26,16 +30,17 @@ $(document).ready(function () {
                 height: "120px"
             });
             userScore = heartScore + userScore;
-            //$(".heart-shape").append(userScore);
-            console.log(heartScore);
-            console.log(userScore);
             $("#user-score").text(userScore);
             if (userScore === randomNumber) {
                 wins++;
                 $("#wins").text(wins);
                 userScore = 0;
                 $("#user-score").text(userScore);
+                randomNumber = Math.floor(Math.random() * 120) + 20;
+                $("#random-number").text(randomNumber);
+                heartScore=(Math.floor(Math.random() * 12) + 1);
                 alert("You Won");
+                
 
 
             } else if (userScore > randomNumber) {
@@ -43,6 +48,9 @@ $(document).ready(function () {
                 $("#losses").text(losses);
                 userScore = 0;
                 $("#user-score").text(userScore);
+                randomNumber = Math.floor(Math.random() * 120) + 20;
+                $("#random-number").text(randomNumber);
+                heartScore=(Math.floor(Math.random() * 12) + 1);
                 alert("You lose");
 
             }
@@ -62,23 +70,25 @@ $(document).ready(function () {
                 height: "120px"
             });
             userScore = clubScore + userScore;
-            //$(".clubs-shape").append(userScore);
-            console.log(clubScore);
-            console.log(userScore);
             $("#user-score").text(userScore);
             if (userScore === randomNumber) {
                 wins++;
                 $("#wins").text(wins);
                 userScore = 0;
                 $("#user-score").text(userScore);
+                randomNumber = Math.floor(Math.random() * 120) + 20;
+                $("#random-number").text(randomNumber);
+                clubScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You Won");
 
             } else if (userScore > randomNumber) {
                 losses++;
                 userScore = 0;
-                $("#losses").text(losses);
-                
+                $("#losses").text(losses);               
                 $("#user-score").text(userScore);
+                randomNumber = Math.floor(Math.random() * 120) + 20;
+                $("#random-number").text(randomNumber);
+                clubScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You lose");
 
             }
@@ -96,32 +106,32 @@ $(document).ready(function () {
                 height: "120px"
             });
             userScore = diamondScore + userScore;
-            // $(".diamond-shape").append(userScore);
-
-            console.log(diamondScore);
-            console.log(userScore);
             $("#user-score").text(userScore);
             if (userScore === randomNumber) {
                 wins++;
                 $("#wins").text(wins);
                 userScore = 0;
                 $("#user-score").text(userScore);
+                randomNumber = Math.floor(Math.random() * 120) + 20;
+                $("#random-number").text(randomNumber);
+                diamondScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You Won");
+
+                
 
             } else if (userScore > randomNumber) {
                 losses++;
                 userScore = 0;
-                $("#losses").text(losses);
-                
+                $("#losses").text(losses);                
                 $("#user-score").text(userScore);
+                randomNumber = Math.floor(Math.random() * 120) + 20;
+                $("#random-number").text(randomNumber);
+                diamondScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You lose");
+                
 
             }
         });
-
-
-        console.log(diamondScore);
-
 
         var spadeScore = (Math.floor(Math.random() * 12) + 1);
         $(".spade-shape").on("click", function () {
@@ -132,29 +142,35 @@ $(document).ready(function () {
                 height: "120px"
             });
             userScore = spadeScore + userScore;
-            //$(".spade-shape").append(userScore);
-            console.log(spadeScore);
-            console.log(userScore);
+
             $("#user-score").text(userScore);
             if (userScore === randomNumber) {
                 wins++;
                 $("#wins").text(wins);
                 userScore = 0;
                 $("#user-score").text(userScore);
+                randomNumber = Math.floor(Math.random() * 120) + 20;
+                $("#random-number").text(randomNumber);
+                spadeScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You Won");
+
 
 
             } else if (userScore > randomNumber) {
                 losses++;
                 userScore = 0;
                 $("#losses").text(losses);
-               
                 $("#user-score").text(userScore);
+                randomNumber = Math.floor(Math.random() * 120) + 20;
+                $("#random-number").text(randomNumber);
+                spadeScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You lose");
+
 
             }
         });
     } else {
         userScore = 0;
+
     }
 });
