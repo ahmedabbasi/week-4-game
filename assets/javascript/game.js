@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("#wins").text(wins);
     $("#losses").text(losses);
 
-        var randomNumber=(Math.floor(Math.random() * 120) + 20);
+        var randomNumber=(Math.floor(Math.random() * 120) + 1);
         $("#random-number").text(randomNumber);
     
         //function calRandom(){
@@ -36,7 +36,7 @@ $(document).ready(function () {
                 $("#wins").text(wins);
                 userScore = 0;
                 $("#user-score").text(userScore);
-                randomNumber = Math.floor(Math.random() * 120) + 20;
+                randomNumber = Math.floor(Math.random() * 120) + 1;
                 $("#random-number").text(randomNumber);
                 heartScore=(Math.floor(Math.random() * 12) + 1);
                 alert("You Won");
@@ -48,7 +48,7 @@ $(document).ready(function () {
                 $("#losses").text(losses);
                 userScore = 0;
                 $("#user-score").text(userScore);
-                randomNumber = Math.floor(Math.random() * 120) + 20;
+                randomNumber = Math.floor(Math.random() * 120) + 1;
                 $("#random-number").text(randomNumber);
                 heartScore=(Math.floor(Math.random() * 12) + 1);
                 alert("You lose");
@@ -76,7 +76,7 @@ $(document).ready(function () {
                 $("#wins").text(wins);
                 userScore = 0;
                 $("#user-score").text(userScore);
-                randomNumber = Math.floor(Math.random() * 120) + 20;
+                randomNumber = Math.floor(Math.random() * 120) + 1;
                 $("#random-number").text(randomNumber);
                 clubScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You Won");
@@ -86,7 +86,7 @@ $(document).ready(function () {
                 userScore = 0;
                 $("#losses").text(losses);               
                 $("#user-score").text(userScore);
-                randomNumber = Math.floor(Math.random() * 120) + 20;
+                randomNumber = Math.floor(Math.random() * 120) + 1;
                 $("#random-number").text(randomNumber);
                 clubScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You lose");
@@ -112,7 +112,7 @@ $(document).ready(function () {
                 $("#wins").text(wins);
                 userScore = 0;
                 $("#user-score").text(userScore);
-                randomNumber = Math.floor(Math.random() * 120) + 20;
+                randomNumber = Math.floor(Math.random() * 120) + 1;
                 $("#random-number").text(randomNumber);
                 diamondScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You Won");
@@ -124,7 +124,7 @@ $(document).ready(function () {
                 userScore = 0;
                 $("#losses").text(losses);                
                 $("#user-score").text(userScore);
-                randomNumber = Math.floor(Math.random() * 120) + 20;
+                randomNumber = Math.floor(Math.random() * 120) + 1;
                 $("#random-number").text(randomNumber);
                 diamondScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You lose");
@@ -149,7 +149,7 @@ $(document).ready(function () {
                 $("#wins").text(wins);
                 userScore = 0;
                 $("#user-score").text(userScore);
-                randomNumber = Math.floor(Math.random() * 120) + 20;
+                randomNumber = Math.floor(Math.random() * 120) + 1;
                 $("#random-number").text(randomNumber);
                 spadeScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You Won");
@@ -161,7 +161,7 @@ $(document).ready(function () {
                 userScore = 0;
                 $("#losses").text(losses);
                 $("#user-score").text(userScore);
-                randomNumber = Math.floor(Math.random() * 120) + 20;
+                randomNumber = Math.floor(Math.random() * 120) + 1;
                 $("#random-number").text(randomNumber);
                 spadeScore = (Math.floor(Math.random() * 12) + 1);
                 alert("You lose");
